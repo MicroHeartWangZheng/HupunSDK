@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HupunSDK", "HupunSDK\HupunSDK.csproj", "{6539A171-01AE-4EA7-A134-9493A7E2B7A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HupunSDK.Core", "HupunSDK.Core\HupunSDK.Core.csproj", "{EF771F73-D1B1-441B-9ABC-277AE7719D39}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HupunSDK.Test", "HupunTest\HupunSDK.Test.csproj", "{C14CC62C-8251-4D21-9C46-FECD3461B8C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HupunSDK.Common", "HupunSDK.Common\HupunSDK.Common.csproj", "{239A2C38-F6E0-4504-A831-840A249CE471}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6539A171-01AE-4EA7-A134-9493A7E2B7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6539A171-01AE-4EA7-A134-9493A7E2B7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6539A171-01AE-4EA7-A134-9493A7E2B7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6539A171-01AE-4EA7-A134-9493A7E2B7A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF771F73-D1B1-441B-9ABC-277AE7719D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF771F73-D1B1-441B-9ABC-277AE7719D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF771F73-D1B1-441B-9ABC-277AE7719D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF771F73-D1B1-441B-9ABC-277AE7719D39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C14CC62C-8251-4D21-9C46-FECD3461B8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C14CC62C-8251-4D21-9C46-FECD3461B8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C14CC62C-8251-4D21-9C46-FECD3461B8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C14CC62C-8251-4D21-9C46-FECD3461B8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{239A2C38-F6E0-4504-A831-840A249CE471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239A2C38-F6E0-4504-A831-840A249CE471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239A2C38-F6E0-4504-A831-840A249CE471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239A2C38-F6E0-4504-A831-840A249CE471}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B4534F2-F8F1-4DDD-9F04-FAC3B649BFF8}
+	EndGlobalSection
+EndGlobal

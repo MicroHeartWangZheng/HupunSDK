@@ -1,0 +1,12 @@
+D:\Codes\Company\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.deps.json
+D:\Codes\Company\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.dll
+D:\Codes\Company\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.pdb
+D:\Codes\Company\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.Core.dll
+D:\Codes\Company\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.Core.pdb
+D:\Codes\Company\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.csprojAssemblyReference.cache
+D:\Codes\Company\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.AssemblyInfoInputs.cache
+D:\Codes\Company\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.AssemblyInfo.cs
+D:\Codes\Company\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.csproj.CoreCompileInputs.cache
+D:\Codes\Company\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.csproj.CopyComplete
+D:\Codes\Company\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.dll
+D:\Codes\Company\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.pdb

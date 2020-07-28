@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VTmoMOZwTZWJ+KlmjzSt6SGkxYuMZ/WTRBImOsyJaYo2zVD/ZXgDXFcboDm2dIkeHk2uHP0uJvcQ2p2f8DF3aA==",
+  "success": true,
+  "projectFilePath": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Common\\HupunSDK.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

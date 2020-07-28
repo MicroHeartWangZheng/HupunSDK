@@ -1,0 +1,199 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK\\HupunSDK.csproj": {}
+  },
+  "projects": {
+    "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Common\\HupunSDK.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Common\\HupunSDK.Common.csproj",
+        "projectName": "HupunSDK.Common",
+        "projectPath": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Common\\HupunSDK.Common.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://localhost:8080/nuget": {},
+          "http://nuget.service.osmws.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Core\\HupunSDK.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Core\\HupunSDK.Core.csproj",
+        "projectName": "HupunSDK.Core",
+        "projectPath": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Core\\HupunSDK.Core.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://localhost:8080/nuget": {},
+          "http://nuget.service.osmws.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Common\\HupunSDK.Common.csproj": {
+                "projectPath": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Common\\HupunSDK.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK\\HupunSDK.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK\\HupunSDK.csproj",
+        "projectName": "HupunSDK",
+        "projectPath": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK\\HupunSDK.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://localhost:8080/nuget": {},
+          "http://nuget.service.osmws.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Common\\HupunSDK.Common.csproj": {
+                "projectPath": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Common\\HupunSDK.Common.csproj"
+              },
+              "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Core\\HupunSDK.Core.csproj": {
+                "projectPath": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Core\\HupunSDK.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
