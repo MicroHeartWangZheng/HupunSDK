@@ -1,4 +1,5 @@
-﻿using HupunSDK.Core;
+﻿using HupunSDK.Common.Extend;
+using HupunSDK.Core;
 using HupunSDK.Response;
 using Newtonsoft.Json;
 
@@ -10,7 +11,14 @@ namespace HupunSDK.Request
         public string AppKey { get; set; }
 
         [JsonProperty("sign")]
-        public string Sign { get; set; }
+        public string Sign
+        {
+            get
+            {
+                var signStr = this.GetParameters().CleanupDictionary().ToSignString(false, "sign");
+                return signStr.GetMD5().ToUpper();
+            }
+        }
 
         [JsonProperty("format")]
         public string Format { get; set; } = "json";

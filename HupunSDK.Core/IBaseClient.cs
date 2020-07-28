@@ -2,7 +2,7 @@
 
 namespace HupunSDK.Core
 {
-    public interface IClient
+    public interface IBaseClient
     {
         Task<TResponse> ExecuteAsync<TResponse>(IRequest<TResponse> request) where TResponse : BaseResponse, new();
 

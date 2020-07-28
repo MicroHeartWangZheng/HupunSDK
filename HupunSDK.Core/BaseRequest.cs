@@ -31,12 +31,5 @@ namespace HupunSDK.Core
         /// </summary>
         /// <returns></returns>
         public abstract HttpMethod GetHttpMethod();
-
-        /// <summary>
-        /// 计算签名
-        /// </summary>
-        /// <returns></returns>
-        public abstract string CalcSign();
-
     }
 }

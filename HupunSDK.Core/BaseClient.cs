@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 
 namespace HupunSDK.Core
 {
-    public abstract class BaseClient : IClient
+    public abstract class BaseClient : IBaseClient
     {
         protected static HttpClient httpClient;
 
+        protected BaseConfig Config;
+
         protected BaseClient()
         {
-            httpClient = httpClient ?? new HttpClient();
+            httpClient = httpClient ?? HttpClientFactory.Create();
         }
 
         public virtual async Task<TResponse> ExecuteAsync<TResponse>(IRequest<TResponse> request) where TResponse : BaseResponse, new()

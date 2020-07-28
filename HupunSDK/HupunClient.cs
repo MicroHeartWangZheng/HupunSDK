@@ -1,28 +1,21 @@
-﻿using HupunSDK.Core;
+﻿using HupunSDK.Common.Extend;
+using HupunSDK.Core;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace HupunSDK
 {
-    public class HupunClient : BaseClient
+    public class HupunClient : BaseClient, IHupunClient
     {
-        private string TimeStamp;
+        public HupunClient(HupunConfig hupunConfig)
+        {
+            this.Config = hupunConfig;
+        }
 
         public override string GetRequestUri(IRequest request)
         {
-            var dic = new Dictionary<string, object>();
-            dic.Add("app_id", alipayOptions.AppId);
-            dic.Add("method", request.GetApiName());
-            dic.Add("charset", alipayOptions.Charset);
-            dic.Add("sign_type", "RSA2");
-            dic.Add("sign", GetSign(request));
-            dic.Add("timestamp", TimeStamp);
-            dic.Add("version", "1.0");
-
-            dic.Add("biz_content", JsonConvert.SerializeObject(request.GetParameters().CleanupDictionary(), Formatting.None));
-
-            return alipayOptions.ApiUrl + "?" + dic.ToSortQueryParameters(true);
+            return this.Config.ApiUrl + "?" + request.GetParameters().ToSortQueryParameters();
         }
 
         public override string GetRequestBody(IRequest request)

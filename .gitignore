@@ -1,0 +1,11 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/.vs/HupunSDK/v16/Server/sqlite3
+/HupunSDK/bin
+/HupunSDK/obj
+/HupunSDK.Common/bin
+/HupunSDK.Common/obj
+/HupunSDK.Core/bin
+/HupunSDK.Core/obj

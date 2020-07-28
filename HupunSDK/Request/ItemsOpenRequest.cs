@@ -1,6 +1,4 @@
-﻿using HupunSDK.Core;
-using HupunSDK.Extend;
-using HupunSDK.Models;
+﻿using HupunSDK.Models;
 using HupunSDK.Response;
 using Newtonsoft.Json;
 using System.Collections.Generic;
@@ -12,11 +10,6 @@ namespace HupunSDK.Request
     {
         [JsonProperty("items")]
         public List<Product> Items { get; set; }
-
-        public override string CalcSign(IRequest request)
-        {
-            var signString = request.GetParameters().CleanupDictionary().ToSortQueryParameters();
-        }
 
         public override string GetApiName()
         {

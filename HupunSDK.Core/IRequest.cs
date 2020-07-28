@@ -20,12 +20,6 @@ namespace HupunSDK.Core
         /// </summary>
         /// <returns></returns>
         HttpMethod GetHttpMethod();
-
-        /// <summary>
-        /// 计算签名
-        /// </summary>
-        /// <returns></returns>
-        string CalcSign();
     }
 
     public interface IRequest<TResponse> : IRequest where TResponse : BaseResponse, new()
