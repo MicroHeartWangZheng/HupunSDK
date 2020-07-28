@@ -11,8 +11,6 @@ namespace HupunSDK.Core
     {
         protected static HttpClient httpClient;
 
-        protected BaseConfig Config;
-
         protected BaseClient()
         {
             httpClient = httpClient ?? HttpClientFactory.Create();
@@ -130,6 +128,13 @@ namespace HupunSDK.Core
                 : new StringContent(body, Encoding.UTF8, MediaType);
             return result;
         }
+
+        /// <summary>
+        /// 获取签名
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        public abstract string GetSign(IRequest request);
 
         /// <summary>
         /// 获取数据提交的MediaType

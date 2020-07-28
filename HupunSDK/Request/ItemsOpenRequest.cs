@@ -1,4 +1,5 @@
-﻿using HupunSDK.Models;
+﻿using HupunSDK.Core;
+using HupunSDK.Models;
 using HupunSDK.Response;
 using Newtonsoft.Json;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Net.Http;
 
 namespace HupunSDK.Request
 {
-    public class ItemsOpenRequest : HupunRequest<ItemsOpenResponse>
+    public class ItemsOpenRequest : BaseRequest<ItemsOpenResponse>
     {
         [JsonProperty("items")]
         public List<Product> Items { get; set; }
