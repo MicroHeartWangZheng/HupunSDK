@@ -4,18 +4,17 @@ using HupunSDK.Response;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Text.Json.Serialization;
 
 namespace HupunSDK.Request
 {
-    public class ItemsOpenRequest : BaseRequest<ItemsOpenResponse>
+    public class TradesOpenRequest : BaseRequest<TradesOpenResponse>
     {
-        [JsonProperty("items")]
-        public List<Product> Items { get; set; }
+        [JsonProperty("trades")]
+        public List<Order> Orders { get; set; }
 
         public override string GetApiName()
         {
-            return "/v1/items/open";
+            return "/v1/trades/open";
         }
 
         public override HttpMethod GetHttpMethod()

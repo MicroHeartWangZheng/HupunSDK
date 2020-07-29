@@ -117,13 +117,8 @@ namespace HupunSDK.Core
         /// <returns></returns>
         public virtual HttpContent GetRequestContent(IRequest request)
         {
-            HttpContent result;
             var body = GetRequestBody(request);
-
-            if (string.IsNullOrWhiteSpace(body))
-                return null;
-
-            result = (string.IsNullOrWhiteSpace(MediaType) || request.GetHttpMethod() == HttpMethod.Get)
+            HttpContent result = (string.IsNullOrWhiteSpace(MediaType) || request.GetHttpMethod() == HttpMethod.Get)
                 ? new StringContent(body)
                 : new StringContent(body, Encoding.UTF8, MediaType);
             return result;

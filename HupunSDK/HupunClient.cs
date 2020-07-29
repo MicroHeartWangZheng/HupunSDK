@@ -2,8 +2,7 @@
 using HupunSDK.Common.Extend;
 using HupunSDK.Core;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace HupunSDK
 {
@@ -16,17 +15,17 @@ namespace HupunSDK
         public HupunClient(HupunConfig hupunConfig)
         {
             this.Config = hupunConfig;
-            TimeStamp = DateTimeHelper.ConvertDateTimeToMillisecond(DateTime.Now);
+            TimeStamp = DateTimeHelper.ConvertDateTimeToMillisecond(DateTime.UtcNow);
         }
 
         public override string GetRequestUri(IRequest request)
         {
-            var dic = new Dictionary<string, object>();
+            var dic = request.GetParameters().CleanupDictionary();
             dic.Add("app_key", Config.AppKey);
             dic.Add("format", "json");
             dic.Add("sign", GetSign(request));
             dic.Add("timestamp", TimeStamp);
-            return Config.ApiUrl + "?" + dic.ToSortQueryParameters(true);
+            return Config.ApiUrl + request.GetApiName() + "?" + dic.ToSortQueryParameters(true);
         }
 
         public override string GetRequestBody(IRequest request)
@@ -41,8 +40,9 @@ namespace HupunSDK
             dic.Add("format", "json");
             dic.Add("timestamp", TimeStamp);
 
+            var orderDic = dic.OrderBy(m => m.Key);
             var signString = Config.Secret;
-            foreach (var para in dic)
+            foreach (var para in orderDic)
             {
                 signString += para.Key + para.Value;
             }

@@ -18,3 +18,4 @@ D:\Codes\GitHub\HupunSDK\HupunSDK.Core\obj\Debug\netcoreapp3.1\HupunSDK.Core.Ass
 D:\Codes\GitHub\HupunSDK\HupunSDK.Core\obj\Debug\netcoreapp3.1\HupunSDK.Core.csproj.CopyComplete
 D:\Codes\GitHub\HupunSDK\HupunSDK.Core\obj\Debug\netcoreapp3.1\HupunSDK.Core.dll
 D:\Codes\GitHub\HupunSDK\HupunSDK.Core\obj\Debug\netcoreapp3.1\HupunSDK.Core.pdb
+D:\Codes\GitHub\HupunSDK\HupunSDK.Core\obj\Debug\netcoreapp3.1\HupunSDK.Core.csproj.CoreCompileInputs.cache

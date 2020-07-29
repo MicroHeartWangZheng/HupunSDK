@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace HupunSDK.Response
 {
-    public class ItemsOpenResponse : HupunResponse
+    public class TradesOpenResponse : HupunResponse
     {
         [JsonProperty("response")]
         private string response { get; set; }

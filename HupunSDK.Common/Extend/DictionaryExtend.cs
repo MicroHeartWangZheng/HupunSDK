@@ -139,18 +139,7 @@ namespace HupunSDK.Common.Extend
                 //}
                 else if (value != null)
                 {
-                    bool isAllNull = true;
-                    foreach (var item in value.GetType().GetProperties())
-                    {
-                        if (item.GetValue(value) != null)
-                        {
-                            isAllNull = false;
-                        }
-                    }
-                    if (!isAllNull)
-                    {
-                        newDict.Add(name, JsonConvert.SerializeObject(value));
-                    }
+                    newDict.Add(name, JsonConvert.SerializeObject(value));
                 }
             }
             return newDict;

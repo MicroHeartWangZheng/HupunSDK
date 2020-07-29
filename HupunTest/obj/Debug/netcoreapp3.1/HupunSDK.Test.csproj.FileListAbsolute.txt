@@ -19,3 +19,5 @@ D:\Codes\GitHub\HupunSDK\HupunTest\obj\Debug\netcoreapp3.1\HupunSDK.Test.dll
 D:\Codes\GitHub\HupunSDK\HupunTest\obj\Debug\netcoreapp3.1\HupunSDK.Test.pdb
 D:\Codes\GitHub\HupunSDK\HupunTest\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
 D:\Codes\GitHub\HupunSDK\HupunTest\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\Codes\GitHub\HupunSDK\HupunTest\obj\Debug\netcoreapp3.1\HupunSDK.Test.csproj.CoreCompileInputs.cache
+D:\Codes\GitHub\HupunSDK\HupunTest\obj\Debug\netcoreapp3.1\HupunSDK.Test.genruntimeconfig.cache

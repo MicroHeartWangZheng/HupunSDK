@@ -23,3 +23,4 @@ D:\Codes\GitHub\HupunSDK\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.Core.dll
 D:\Codes\GitHub\HupunSDK\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.Common.pdb
 D:\Codes\GitHub\HupunSDK\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.Core.pdb
 D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.csproj.CopyComplete
+D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.csproj.CoreCompileInputs.cache
