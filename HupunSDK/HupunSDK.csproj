@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Description>万里牛开放平台SDK</Description>
+    <PackageProjectUrl>https://github.com/MicroHeartWangZheng/HupunSDK</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MicroHeartWangZheng/HupunSDK</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
