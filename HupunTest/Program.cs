@@ -12,7 +12,7 @@ namespace HupunSDK.Test
     {
         static void Main(string[] args)
         {
-            CreateOrder();
+            GetOrderStatus();
         }
 
         public static void CreateProduct()
@@ -135,7 +135,7 @@ namespace HupunSDK.Test
                 Orders = new List<Order>() { order }
             };
 
-            HupunClient client = new HupunClient(new HupunConfig()
+            var client = new HupunClient(new HupunConfig()
             {
                 ApiUrl = "http://114.67.231.99/open/api",
                 AppKey = "5Y07TU8",
@@ -147,6 +147,29 @@ namespace HupunSDK.Test
                 Console.WriteLine($"订单推送成功");
             else
                 Console.WriteLine($"订单推送失败");
+        }
+
+        public static void GetOrderStatus()
+        {
+            var request = new TradesErpStatusRequest()
+            {
+                ShopNick = "供应商C",
+                ShopType = 100,
+                TradeIds = "CF123456789"
+            };
+            var client = new HupunClient(new HupunConfig()
+            {
+                ApiUrl = "http://114.67.231.99/open/api",
+                AppKey = "5Y07TU8",
+                Secret = "CC8BC92A4595365AB5172864E1927080"
+            });
+            var response = client.Execute(request);
+
+            if (response.Success)
+                Console.WriteLine($"订单状态:{JsonConvert.SerializeObject(response)}");
+            else
+                Console.WriteLine($"获取订单状态失败");
+            Console.ReadLine();
         }
 
 
