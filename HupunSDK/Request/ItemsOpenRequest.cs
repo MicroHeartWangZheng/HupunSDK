@@ -4,7 +4,6 @@ using HupunSDK.Response;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Text.Json.Serialization;
 
 namespace HupunSDK.Request
 {

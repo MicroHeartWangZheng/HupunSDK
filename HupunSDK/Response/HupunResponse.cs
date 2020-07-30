@@ -1,18 +1,20 @@
 ﻿using HupunSDK.Core;
 using Newtonsoft.Json;
-using System.Text.Json.Serialization;
 
 namespace HupunSDK.Response
 {
-    public class HupunResponse: BaseResponse
+    public class HupunResponse : BaseResponse
     {
-        [JsonPropertyName("success")]
+        [JsonProperty("success")]
         public bool Success { get; set; }
 
-        [JsonPropertyName("error_code")]
+        [JsonProperty("error_code")]
         public string ErrorCode { get; set; }
 
-        [JsonPropertyName("error_msg")]
+        [JsonProperty("error_msg")]
         public string ErrorMsg { get; set; }
+
+        [JsonProperty("response")]
+        public string Response { get; set; }
     }
 }

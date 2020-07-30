@@ -7,6 +7,9 @@ using System.Net.Http;
 
 namespace HupunSDK.Request
 {
+    /// <summary>
+    /// 推送订单到ERP
+    /// </summary>
     public class TradesOpenRequest : BaseRequest<TradesOpenResponse>
     {
         [JsonProperty("trades")]

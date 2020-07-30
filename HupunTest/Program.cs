@@ -3,8 +3,6 @@ using HupunSDK.Request;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Net.NetworkInformation;
 
 namespace HupunSDK.Test
 {
@@ -12,7 +10,7 @@ namespace HupunSDK.Test
     {
         static void Main(string[] args)
         {
-            GetOrderStatus();
+            GetSaleOrders();
         }
 
         public static void CreateProduct()
@@ -72,7 +70,7 @@ namespace HupunSDK.Test
             var response = client.Execute(request);
 
             if (response.Success)
-                Console.WriteLine($"商品推送成功,线上编号:{JsonConvert.SerializeObject(response.Response)}");
+                Console.WriteLine($"商品推送成功,线上编号:{JsonConvert.SerializeObject(response.ProductIds)}");
             else
                 Console.WriteLine($"商品推送失败");
         }
@@ -164,7 +162,6 @@ namespace HupunSDK.Test
                 Secret = "CC8BC92A4595365AB5172864E1927080"
             });
             var response = client.Execute(request);
-
             if (response.Success)
                 Console.WriteLine($"订单状态:{JsonConvert.SerializeObject(response)}");
             else
@@ -172,10 +169,34 @@ namespace HupunSDK.Test
             Console.ReadLine();
         }
 
-
-        private static long GetCurrentTimeStamp()
+        public static void GetSaleOrders()
         {
-            return Common.DateTimeHelper.ConvertDateTimeToMillisecond(DateTime.Now);
+            var request = new SaleErpExchangesRequest()
+            {
+                ShopType = 100,
+                Start = DateTime.Now.AddDays(-30).ToString("yyyy-MM-dd HH:mm:ss"),
+                End = DateTime.Now.AddDays(30).ToString("yyyy-MM-dd HH:mm:ss"),
+                Page = 1,
+                Limit = 50,
+                TimeType = 1,
+            };
+            var client = new HupunClient(new HupunConfig()
+            {
+                ApiUrl = "http://114.67.231.99/open/api",
+                AppKey = "5Y07TU8",
+                Secret = "CC8BC92A4595365AB5172864E1927080"
+            });
+            var response = client.Execute(request);
+            if (response.Success)
+                Console.WriteLine($"订单状态:{JsonConvert.SerializeObject(response)}");
+            else
+                Console.WriteLine($"获取订单状态失败");
+            Console.ReadLine();
+        }
+
+        private static long GetCurrentTimeStamp(DateTime? date = null)
+        {
+            return Common.DateTimeHelper.ConvertDateTimeToMillisecond(date ?? DateTime.Now);
         }
     }
 }

@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\HupunSDK.Core\HupunSDK.Core.csproj" />
     <ProjectReference Include="..\HupunSDK\HupunSDK.csproj" />
   </ItemGroup>

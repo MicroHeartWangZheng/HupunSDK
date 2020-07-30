@@ -5,15 +5,12 @@ namespace HupunSDK.Response
 {
     public class ItemsOpenResponse : HupunResponse
     {
-        [JsonProperty("response")]
-        private string response { get; set; }
-
         [JsonIgnore]
-        public List<string> Response
+        public List<string> ProductIds
         {
             get
             {
-                return JsonConvert.DeserializeObject<List<string>>(this.response);
+                return JsonConvert.DeserializeObject<List<string>>(this.Response);
             }
         }
     }

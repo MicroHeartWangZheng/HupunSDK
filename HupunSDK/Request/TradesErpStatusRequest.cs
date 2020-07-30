@@ -5,7 +5,10 @@ using Newtonsoft.Json;
 
 namespace HupunSDK.Request
 {
-    public class TradesErpStatusRequest : BaseRequest<ItemsOpenResponse>
+    /// <summary>
+    /// 查询ERP中订单状态
+    /// </summary>
+    public class TradesErpStatusRequest : BaseRequest<TradesErpStatusResponse>
     {
         /// <summary>
         /// 店铺类型，B2C 平台店铺类型：100
