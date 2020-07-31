@@ -6,8 +6,9 @@ D:\Codes\Company\HupunSDK.Common\obj\Debug\netcoreapp3.1\HupunSDK.Common.Assembl
 D:\Codes\GitHub\HupunSDK\HupunSDK.Common\bin\Debug\netcoreapp3.1\HupunSDK.Common.deps.json
 D:\Codes\GitHub\HupunSDK\HupunSDK.Common\bin\Debug\netcoreapp3.1\HupunSDK.Common.dll
 D:\Codes\GitHub\HupunSDK\HupunSDK.Common\bin\Debug\netcoreapp3.1\HupunSDK.Common.pdb
+D:\Codes\GitHub\HupunSDK\HupunSDK.Common\obj\Debug\netcoreapp3.1\HupunSDK.Common.csprojAssemblyReference.cache
 D:\Codes\GitHub\HupunSDK\HupunSDK.Common\obj\Debug\netcoreapp3.1\HupunSDK.Common.AssemblyInfoInputs.cache
 D:\Codes\GitHub\HupunSDK\HupunSDK.Common\obj\Debug\netcoreapp3.1\HupunSDK.Common.AssemblyInfo.cs
+D:\Codes\GitHub\HupunSDK\HupunSDK.Common\obj\Debug\netcoreapp3.1\HupunSDK.Common.csproj.CoreCompileInputs.cache
 D:\Codes\GitHub\HupunSDK\HupunSDK.Common\obj\Debug\netcoreapp3.1\HupunSDK.Common.dll
 D:\Codes\GitHub\HupunSDK\HupunSDK.Common\obj\Debug\netcoreapp3.1\HupunSDK.Common.pdb
-D:\Codes\GitHub\HupunSDK\HupunSDK.Common\obj\Debug\netcoreapp3.1\HupunSDK.Common.csprojAssemblyReference.cache

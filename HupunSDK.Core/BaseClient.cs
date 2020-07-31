@@ -67,17 +67,12 @@ namespace HupunSDK.Core
                     Content = GetRequestContent(request) //生成请求对象
                 };
 
-                var requestBody = string.Empty;
-                if (requestMessage.Content != null)
-                {
-                    requestBody = requestMessage.Content.ReadAsStringAsync().Result;
-                }
                 var responseMessage = httpClient.SendAsync(requestMessage).Result;    //发送请求 获取响应报文
                 var responseContent = responseMessage.Content.ReadAsStringAsync().Result; //获取响应报文的正文
                 result = JsonConvert.DeserializeObject<TResponse>(responseContent);       //将响应报文的正文 序列化为response对象
 
                 result.RequestUri = requestUri;
-                result.RequestBody = requestBody;
+                result.RequestBody = GetRequestBody(request);
                 result.StatusCode = responseMessage.StatusCode;
                 result.Headers = responseMessage.Headers;
                 result.ResponseBody = responseContent;

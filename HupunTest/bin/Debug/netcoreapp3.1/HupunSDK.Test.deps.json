@@ -9,7 +9,8 @@
       "HupunSDK.Test/1.0.0": {
         "dependencies": {
           "HupunSDK": "1.0.0",
-          "HupunSDK.Core": "1.0.0"
+          "HupunSDK.Core": "1.0.0",
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "HupunSDK.Test.dll": {}

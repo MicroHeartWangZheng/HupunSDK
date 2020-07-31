@@ -32,7 +32,6 @@ namespace HupunSDK.Models
         [JsonProperty("itemTitle")]
         public string ItemTitle { get; set; }
 
-
         /// <summary>
         /// 规格值，如红色,M
         /// </summary>

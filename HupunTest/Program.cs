@@ -10,7 +10,7 @@ namespace HupunSDK.Test
     {
         static void Main(string[] args)
         {
-            GetSaleOrders();
+            CreateOrder();
         }
 
         public static void CreateProduct()
@@ -79,15 +79,15 @@ namespace HupunSDK.Test
         {
             var order = new Order()
             {
-                Buyer = "418706636@qq.com",
+                Buyer = "111111@qq.com",
                 CreateTime = GetCurrentTimeStamp(),
-                DiscountFee = 10.2m,
+                DiscountFee = 111m,
                 EndTime = GetCurrentTimeStamp(),
                 HasRefund = 0,
                 ModifyTime = GetCurrentTimeStamp(),
-                Payment = 100.3m,
+                Payment = 1111m,
                 PayTime = GetCurrentTimeStamp(),
-                PostFee = 89.3m,
+                PostFee = 11.3m,
                 ReceiverAddress = "浙江省杭州市江干区",
                 ReceiverMobile = "17601223799",
                 ReceiverName = "小度",
@@ -95,14 +95,14 @@ namespace HupunSDK.Test
                 ShippingType = 1,
                 ShopNick = "供应商C",
                 Status = 3,
-                TotalFee = 200.6m,
-                TradeId = "CF123456789",
+                TotalFee = 1111.6m,
+                TradeId = "CF11111111",
             };
 
             var orderDateil1 = new OrderDetail()
             {
                 ImageUrl = "http://blog.csdn.net/MaYang_/article/details/100748276",
-                ItemID = "0001",
+                ItemID = "0011",
                 ItemTitle = "商品标题1",
                 OrderID = "SUB1",
                 Payment = 100.3m,
@@ -110,12 +110,12 @@ namespace HupunSDK.Test
                 Size = 1,
                 SkuTitle = "1kg,小型",
                 Status = 3,
-                TradeId = "CF123456789"
+                TradeId = "CF11111111"
             };
             var orderDateil2 = new OrderDetail()
             {
                 ImageUrl = "http://blog.csdn.net/MaYang_/article/details/100748276",
-                ItemID = "0002",
+                ItemID = "0012",
                 ItemTitle = "商品标题2",
                 OrderID = "SUB2",
                 Payment = 200.3m,
@@ -123,11 +123,12 @@ namespace HupunSDK.Test
                 Size = 2,
                 SkuTitle = "2kg,中型",
                 Status = 3,
-                TradeId = "CF123456789"
+                TradeId = "CF11111111"
             };
 
             order.OrderDetails.Add(orderDateil1);
             order.OrderDetails.Add(orderDateil2);
+
             var request = new TradesOpenRequest()
             {
                 Orders = new List<Order>() { order }

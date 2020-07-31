@@ -10,11 +10,6 @@ D:\Codes\Company\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.csproj.CoreCompileInp
 D:\Codes\Company\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.csproj.CopyComplete
 D:\Codes\Company\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.dll
 D:\Codes\Company\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.pdb
-D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.csprojAssemblyReference.cache
-D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.AssemblyInfoInputs.cache
-D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.AssemblyInfo.cs
-D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.dll
-D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.pdb
 D:\Codes\GitHub\HupunSDK\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.deps.json
 D:\Codes\GitHub\HupunSDK\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.dll
 D:\Codes\GitHub\HupunSDK\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.pdb
@@ -22,5 +17,10 @@ D:\Codes\GitHub\HupunSDK\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.Common.dll
 D:\Codes\GitHub\HupunSDK\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.Core.dll
 D:\Codes\GitHub\HupunSDK\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.Common.pdb
 D:\Codes\GitHub\HupunSDK\HupunSDK\bin\Debug\netcoreapp3.1\HupunSDK.Core.pdb
-D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.csproj.CopyComplete
+D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.csprojAssemblyReference.cache
+D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.AssemblyInfoInputs.cache
+D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.AssemblyInfo.cs
 D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.csproj.CoreCompileInputs.cache
+D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.csproj.CopyComplete
+D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.dll
+D:\Codes\GitHub\HupunSDK\HupunSDK\obj\Debug\netcoreapp3.1\HupunSDK.pdb
