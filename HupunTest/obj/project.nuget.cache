@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bX+toimsqKjEn1px86FFEvsPsjUaOkiKB2Nyb4FxTe20OoLBpapDox95L1uk/3xWxnvwX7QXERTcbNvUHtakRg==",
+  "dgSpecHash": "eM/v6D0mePX0UBWUamtkEb2crJ4y9pOINNwuiy9RqqBE1sHqyc9TaL6tHlk+/lSq0S0am/BzJhvgzdi6BGFJ9Q==",
   "success": true,
   "projectFilePath": "D:\\Codes\\GitHub\\HupunSDK\\HupunTest\\HupunSDK.Test.csproj",
   "expectedPackageFiles": [
@@ -79,7 +79,9 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\hupunsdk\\1.0.1\\hupunsdk.1.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\hupunsdk.core\\1.0.1\\hupunsdk.core.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }

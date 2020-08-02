@@ -1225,7 +1225,7 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "HupunSDK.Common/1.0.0": {
+      "HupunSDK.Common/1.0.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -4561,7 +4561,7 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "HupunSDK.Common/1.0.0": {
+    "HupunSDK.Common/1.0.1": {
       "type": "project",
       "path": "../HupunSDK.Common/HupunSDK.Common.csproj",
       "msbuildProject": "../HupunSDK.Common/HupunSDK.Common.csproj"
@@ -4569,7 +4569,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "HupunSDK.Common >= 1.0.0",
+      "HupunSDK.Common >= 1.0.1",
       "Microsoft.AspNet.WebApi.Client >= 5.2.7",
       "Newtonsoft.Json >= 12.0.3"
     ]
