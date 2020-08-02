@@ -13,7 +13,7 @@ namespace HupunSDK.Request
     public class TradesOpenRequest : BaseRequest<TradesOpenResponse>
     {
         [JsonProperty("trades")]
-        public List<Order> Orders { get; set; }
+        public List<Order> Orders { get; set; } = new List<Order>();
 
         public override string GetApiName()
         {

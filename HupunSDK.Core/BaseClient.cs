@@ -27,7 +27,6 @@ namespace HupunSDK.Core
                 {
                     Content = GetRequestContent(request)
                 };
-
                 var responseMessage = await httpClient.SendAsync(requestMessage).ConfigureAwait(false);
                 var responseContent = await responseMessage.Content.ReadAsStringAsync().ConfigureAwait(false);
                 result = JsonConvert.DeserializeObject<TResponse>(responseContent);
@@ -70,13 +69,11 @@ namespace HupunSDK.Core
                 var responseMessage = httpClient.SendAsync(requestMessage).Result;    //发送请求 获取响应报文
                 var responseContent = responseMessage.Content.ReadAsStringAsync().Result; //获取响应报文的正文
                 result = JsonConvert.DeserializeObject<TResponse>(responseContent);       //将响应报文的正文 序列化为response对象
-
                 result.RequestUri = requestUri;
                 result.RequestBody = GetRequestBody(request);
                 result.StatusCode = responseMessage.StatusCode;
                 result.Headers = responseMessage.Headers;
                 result.ResponseBody = responseContent;
-
                 return result;
             }
             catch (Exception ex)
@@ -112,11 +109,9 @@ namespace HupunSDK.Core
         /// <returns></returns>
         public virtual HttpContent GetRequestContent(IRequest request)
         {
-            var body = GetRequestBody(request);
-            HttpContent result = (string.IsNullOrWhiteSpace(MediaType) || request.GetHttpMethod() == HttpMethod.Get)
-                ? new StringContent(body)
-                : new StringContent(body, Encoding.UTF8, MediaType);
-            return result;
+            return (string.IsNullOrWhiteSpace(MediaType) || request.GetHttpMethod() == HttpMethod.Get)
+                ? new StringContent(string.Empty)
+                : new StringContent(GetRequestBody(request), Encoding.UTF8, MediaType);
         }
 
         /// <summary>
