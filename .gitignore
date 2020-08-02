@@ -1,6 +1,13 @@
 ﻿.dll
-/HupunSDK/bin
-/HupunSDK.Common/obj
+HupunSDK/.vs
+HupunSDK/bin
+HupunSDK/obj
+HupunSDK.Common/bin
+HupunSDK.Common/obj
+HupunSDK.Core/bin
+HupunSDK.Core/obj
+HupunSDK.Test/bin
+HupunSDK.Test/obj
 *.cache
 *.nuspec
 *.nupkg
