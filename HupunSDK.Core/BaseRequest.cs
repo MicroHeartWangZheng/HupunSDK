@@ -1,9 +1,7 @@
-﻿using HupunSDK.Common.Extend;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Text.Json.Serialization;
 
 namespace HupunSDK.Core
 {

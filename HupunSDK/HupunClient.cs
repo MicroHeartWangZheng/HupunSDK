@@ -3,6 +3,7 @@ using HupunSDK.Common.Extend;
 using HupunSDK.Core;
 using System;
 using System.Linq;
+using System.Net.NetworkInformation;
 
 namespace HupunSDK
 {
@@ -15,7 +16,7 @@ namespace HupunSDK
         public HupunClient(HupunConfig hupunConfig)
         {
             this.Config = hupunConfig;
-            TimeStamp = DateTimeHelper.ConvertDateTimeToMillisecond(DateTime.UtcNow);
+            TimeStamp = DateTime.UtcNow.ToTimeStamp();
         }
 
         public override string GetRequestUri(IRequest request)
@@ -47,7 +48,6 @@ namespace HupunSDK
                 signString += para.Key + para.Value;
             }
             signString += Config.Secret;
-
             return signString.GetMD5().ToUpper();
         }
 

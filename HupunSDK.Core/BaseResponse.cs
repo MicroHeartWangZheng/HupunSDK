@@ -29,6 +29,7 @@ namespace HupunSDK.Core
         /// <summary>
         /// 设置或获取响应头
         /// </summary>
+        [Newtonsoft.Json.JsonIgnore]
         public HttpResponseHeaders Headers { set; get; }
 
         public override string ToString()

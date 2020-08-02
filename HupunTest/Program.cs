@@ -1,4 +1,5 @@
-﻿using HupunSDK.Models;
+﻿using HupunSDK.Common.Extend;
+using HupunSDK.Models;
 using HupunSDK.Request;
 using Newtonsoft.Json;
 using System;
@@ -10,18 +11,21 @@ namespace HupunSDK.Test
     {
         static void Main(string[] args)
         {
+            CreateProduct();
             CreateOrder();
+            GetOrderStatus();
+            GetSaleOrders();
         }
 
         public static void CreateProduct()
         {
             var product = new Product()
             {
-                CreateTime = Common.DateTimeHelper.ConvertDateTimeToMillisecond(DateTime.Now),
+                CreateTime = DateTime.Now.ToTimeStamp(),
                 ImageURL = "http://blog.csdn.net/MaYang_/article/details/100748276",
                 ItemId = "0001",
                 ItemURL = "https://www.baidu.com/s?ie=UTF-8&wd=ServiceStack",
-                ModifyTime = Common.DateTimeHelper.ConvertDateTimeToMillisecond(DateTime.Now),
+                ModifyTime = DateTime.Now.ToTimeStamp(),
                 Price = 120m,
                 Quantity = 20,
                 ShopNick = "供应商C",
@@ -31,10 +35,10 @@ namespace HupunSDK.Test
 
             var sku1 = new Sku()
             {
-                CreateTime = Common.DateTimeHelper.ConvertDateTimeToMillisecond(DateTime.Now),
+                CreateTime =DateTime.Now.ToTimeStamp(),
                 ImageURL = "http://blog.csdn.net/MaYang_/article/details/100748276",
                 ItemId = "0001",
-                ModifyTime = Common.DateTimeHelper.ConvertDateTimeToMillisecond(DateTime.Now),
+                ModifyTime =DateTime.Now.ToTimeStamp(),
                 Price = 130m,
                 Quantity = 10,
                 SkuId = "0001-001",
@@ -43,10 +47,10 @@ namespace HupunSDK.Test
             };
             var sku2 = new Sku()
             {
-                CreateTime = Common.DateTimeHelper.ConvertDateTimeToMillisecond(DateTime.Now),
+                CreateTime =DateTime.Now.ToTimeStamp(),
                 ImageURL = "http://blog.csdn.net/MaYang_/article/details/100748276",
                 ItemId = "0001",
-                ModifyTime = Common.DateTimeHelper.ConvertDateTimeToMillisecond(DateTime.Now),
+                ModifyTime =DateTime.Now.ToTimeStamp(),
                 Price = 140m,
                 Quantity = 10,
                 SkuId = "0001-002",
@@ -80,18 +84,18 @@ namespace HupunSDK.Test
             var order = new Order()
             {
                 Buyer = "111111@qq.com",
-                CreateTime = GetCurrentTimeStamp(),
+                CreateTime = DateTime.Now.ToTimeStamp(),
                 DiscountFee = 111m,
-                EndTime = GetCurrentTimeStamp(),
+                EndTime = DateTime.Now.ToTimeStamp(),
                 HasRefund = 0,
-                ModifyTime = GetCurrentTimeStamp(),
+                ModifyTime = DateTime.Now.ToTimeStamp(),
                 Payment = 1111m,
-                PayTime = GetCurrentTimeStamp(),
+                PayTime = DateTime.Now.ToTimeStamp(),
                 PostFee = 11.3m,
                 ReceiverAddress = "浙江省杭州市江干区",
                 ReceiverMobile = "17601223799",
                 ReceiverName = "小度",
-                ShippingTime = GetCurrentTimeStamp(),
+                ShippingTime = DateTime.Now.ToTimeStamp(),
                 ShippingType = 1,
                 ShopNick = "供应商C",
                 Status = 3,
@@ -193,11 +197,6 @@ namespace HupunSDK.Test
             else
                 Console.WriteLine($"获取订单状态失败");
             Console.ReadLine();
-        }
-
-        private static long GetCurrentTimeStamp(DateTime? date = null)
-        {
-            return Common.DateTimeHelper.ConvertDateTimeToMillisecond(date ?? DateTime.Now);
         }
     }
 }
