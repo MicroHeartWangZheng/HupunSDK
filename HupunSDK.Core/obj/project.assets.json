@@ -4578,7 +4578,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
       "projectUniqueName": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Core\\HupunSDK.Core.csproj",
       "projectName": "HupunSDK.Core",
