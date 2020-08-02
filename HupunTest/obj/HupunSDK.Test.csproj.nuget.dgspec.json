@@ -133,7 +133,7 @@
       }
     },
     "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK\\HupunSDK.csproj": {
-      "version": "1.0.1",
+      "version": "1.0.2",
       "restore": {
         "projectUniqueName": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK\\HupunSDK.csproj",
         "projectName": "HupunSDK",
@@ -156,7 +156,14 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Common\\HupunSDK.Common.csproj": {
+                "projectPath": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Common\\HupunSDK.Common.csproj"
+              },
+              "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Core\\HupunSDK.Core.csproj": {
+                "projectPath": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Core\\HupunSDK.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

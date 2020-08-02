@@ -5,11 +5,16 @@
     <Description>万里牛开放平台SDK</Description>
     <PackageProjectUrl>https://github.com/MicroHeartWangZheng/HupunSDK</PackageProjectUrl>
     <RepositoryUrl>https://github.com/MicroHeartWangZheng/HupunSDK</RepositoryUrl>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HupunSDK.Common\HupunSDK.Common.csproj" />
+    <ProjectReference Include="..\HupunSDK.Core\HupunSDK.Core.csproj" />
   </ItemGroup>
 
 </Project>
