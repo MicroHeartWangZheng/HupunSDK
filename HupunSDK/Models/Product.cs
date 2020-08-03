@@ -66,7 +66,7 @@ namespace HupunSDK.Models
         [JsonProperty("modifyTime")]
         public long ModifyTime { get; set; }
 
-
+        [JsonProperty("skus")]
         public List<Sku> Skus { get; set; } = new List<Sku>();
     }
 }

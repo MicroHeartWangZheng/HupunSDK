@@ -36,7 +36,7 @@ namespace HupunSDK.Models
         /// 系统订单状态，0：订单审核，1:打单配货，2：验货，3：称重，4：待发货，5：财审，8：已发货，9：交易成功，10：交易关闭
         /// </summary>
         [JsonProperty("status")]
-        public string Status { get; set; }
+        public int Status { get; set; }
 
         /// <summary>
         /// 快递公司编码
