@@ -5,7 +5,10 @@
     <Description>万里牛开放平台SDK</Description>
     <PackageProjectUrl>https://github.com/MicroHeartWangZheng/HupunSDK</PackageProjectUrl>
     <RepositoryUrl>https://github.com/MicroHeartWangZheng/HupunSDK</RepositoryUrl>
-    <Version>1.0.2</Version>
+    <Version>1.0.11</Version>
+    <Authors>MicroHeart</Authors>
+    <Company>None</Company>
+    <Product>None</Product>
   </PropertyGroup>
 
   <ItemGroup>

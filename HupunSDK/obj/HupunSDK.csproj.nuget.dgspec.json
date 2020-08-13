@@ -65,7 +65,7 @@
       }
     },
     "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Core\\HupunSDK.Core.csproj": {
-      "version": "1.0.1",
+      "version": "1.0.2",
       "restore": {
         "projectUniqueName": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK.Core\\HupunSDK.Core.csproj",
         "projectName": "HupunSDK.Core",
@@ -133,7 +133,7 @@
       }
     },
     "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK\\HupunSDK.csproj": {
-      "version": "1.0.2",
+      "version": "1.0.11",
       "restore": {
         "projectUniqueName": "D:\\Codes\\GitHub\\HupunSDK\\HupunSDK\\HupunSDK.csproj",
         "projectName": "HupunSDK",

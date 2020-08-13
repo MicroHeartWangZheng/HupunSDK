@@ -1225,12 +1225,12 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "HupunSDK/1.0.2": {
+      "HupunSDK/1.0.11": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "HupunSDK.Common": "1.0.1",
-          "HupunSDK.Core": "1.0.1",
+          "HupunSDK.Core": "1.0.2",
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
@@ -1253,7 +1253,7 @@
           "bin/placeholder/HupunSDK.Common.dll": {}
         }
       },
-      "HupunSDK.Core/1.0.1": {
+      "HupunSDK.Core/1.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -4591,7 +4591,7 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "HupunSDK/1.0.2": {
+    "HupunSDK/1.0.11": {
       "type": "project",
       "path": "../HupunSDK/HupunSDK.csproj",
       "msbuildProject": "../HupunSDK/HupunSDK.csproj"
@@ -4601,7 +4601,7 @@
       "path": "../HupunSDK.Common/HupunSDK.Common.csproj",
       "msbuildProject": "../HupunSDK.Common/HupunSDK.Common.csproj"
     },
-    "HupunSDK.Core/1.0.1": {
+    "HupunSDK.Core/1.0.2": {
       "type": "project",
       "path": "../HupunSDK.Core/HupunSDK.Core.csproj",
       "msbuildProject": "../HupunSDK.Core/HupunSDK.Core.csproj"
@@ -4609,8 +4609,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "HupunSDK >= 1.0.2",
-      "HupunSDK.Core >= 1.0.1",
+      "HupunSDK >= 1.0.11",
+      "HupunSDK.Core >= 1.0.2",
       "Newtonsoft.Json >= 12.0.3"
     ]
   },

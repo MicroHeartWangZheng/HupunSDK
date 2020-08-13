@@ -3,6 +3,7 @@ using HupunSDK.Common.Extend;
 using HupunSDK.Core;
 using System;
 using System.Linq;
+using System.Net.Http;
 using System.Net.NetworkInformation;
 
 namespace HupunSDK
@@ -16,11 +17,16 @@ namespace HupunSDK
         public HupunClient(HupunConfig hupunConfig)
         {
             this.Config = hupunConfig;
-            TimeStamp = DateTime.UtcNow.ToTimeStamp();
+            
         }
 
         public override string GetRequestUri(IRequest request)
         {
+            this.TimeStamp = DateTime.UtcNow.ToTimeStamp();
+
+            if (request.GetHttpMethod() == HttpMethod.Post)
+                return Config.ApiUrl + request.GetApiName();
+
             var dic = request.GetParameters().CleanupDictionary();
             dic.Add("app_key", Config.AppKey);
             dic.Add("format", "json");
@@ -31,7 +37,14 @@ namespace HupunSDK
 
         public override string GetRequestBody(IRequest request)
         {
-            return string.Empty;
+            if (request.GetHttpMethod() == HttpMethod.Get)
+                return string.Empty;
+            var dic = request.GetParameters().CleanupDictionary();
+            dic.Add("app_key", Config.AppKey);
+            dic.Add("format", "json");
+            dic.Add("sign", GetSign(request));
+            dic.Add("timestamp", TimeStamp);
+            return dic.ToSortQueryParameters(true);
         }
 
         public override string GetSign(IRequest request)

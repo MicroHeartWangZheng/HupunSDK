@@ -11,14 +11,14 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("HupunSDK")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("None")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("万里牛开放平台SDK")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.2.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2")]
-[assembly: System.Reflection.AssemblyProductAttribute("HupunSDK")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.11.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.11")]
+[assembly: System.Reflection.AssemblyProductAttribute("None")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HupunSDK")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.2.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.11.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

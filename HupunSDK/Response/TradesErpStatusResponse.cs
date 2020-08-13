@@ -6,7 +6,7 @@ namespace HupunSDK.Response
     public class TradesErpStatusResponse : HupunResponse
     {
         [Newtonsoft.Json.JsonIgnore]
-        public OrderStatusList OrderStatuses
+        public OrderStatusList OrderStatusList
         {
             get
             {

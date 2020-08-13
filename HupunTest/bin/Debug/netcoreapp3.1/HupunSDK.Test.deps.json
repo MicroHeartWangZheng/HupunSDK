@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "HupunSDK.Test/1.0.0": {
         "dependencies": {
-          "HupunSDK": "1.0.0",
-          "HupunSDK.Core": "1.0.0",
+          "HupunSDK": "1.0.11",
+          "HupunSDK.Core": "1.0.2",
           "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
@@ -714,17 +714,17 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "HupunSDK/1.0.0": {
+      "HupunSDK/1.0.11": {
         "dependencies": {
-          "HupunSDK.Common": "1.0.0",
-          "HupunSDK.Core": "1.0.0",
+          "HupunSDK.Common": "1.0.1",
+          "HupunSDK.Core": "1.0.2",
           "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "HupunSDK.dll": {}
         }
       },
-      "HupunSDK.Common/1.0.0": {
+      "HupunSDK.Common/1.0.1": {
         "dependencies": {
           "Newtonsoft.Json": "12.0.3"
         },
@@ -732,9 +732,9 @@
           "HupunSDK.Common.dll": {}
         }
       },
-      "HupunSDK.Core/1.0.0": {
+      "HupunSDK.Core/1.0.2": {
         "dependencies": {
-          "HupunSDK.Common": "1.0.0",
+          "HupunSDK.Common": "1.0.1",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Newtonsoft.Json": "12.0.3"
         },
@@ -1282,17 +1282,17 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "HupunSDK/1.0.0": {
+    "HupunSDK/1.0.11": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "HupunSDK.Common/1.0.0": {
+    "HupunSDK.Common/1.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "HupunSDK.Core/1.0.0": {
+    "HupunSDK.Core/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

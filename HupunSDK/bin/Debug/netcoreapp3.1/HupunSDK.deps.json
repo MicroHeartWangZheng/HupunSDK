@@ -6,10 +6,10 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "HupunSDK/1.0.2": {
+      "HupunSDK/1.0.11": {
         "dependencies": {
           "HupunSDK.Common": "1.0.1",
-          "HupunSDK.Core": "1.0.1",
+          "HupunSDK.Core": "1.0.2",
           "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
@@ -722,7 +722,7 @@
           "HupunSDK.Common.dll": {}
         }
       },
-      "HupunSDK.Core/1.0.1": {
+      "HupunSDK.Core/1.0.2": {
         "dependencies": {
           "HupunSDK.Common": "1.0.1",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
@@ -735,7 +735,7 @@
     }
   },
   "libraries": {
-    "HupunSDK/1.0.2": {
+    "HupunSDK/1.0.11": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1277,7 +1277,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "HupunSDK.Core/1.0.1": {
+    "HupunSDK.Core/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

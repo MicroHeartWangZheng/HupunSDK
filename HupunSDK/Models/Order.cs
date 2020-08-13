@@ -57,6 +57,12 @@ namespace HupunSDK.Models
         public long ShippingTime { get; set; }
 
         /// <summary>
+        /// 仓库编码，与系统基础信息仓库相对应
+        /// </summary>
+        [JsonProperty("storeID")]
+        public string StoreId { get; set; }
+
+        /// <summary>
         /// 发货类型:0：快递；1：EMS；2：平邮；9：卖家承担运费（包邮）；11：虚拟物品；121：自提；122：商家自送（门店配送）
         /// </summary>
         [JsonProperty("shippingType")]
@@ -99,6 +105,24 @@ namespace HupunSDK.Models
         public string ReceiverName { get; set; }
 
         /// <summary>
+        /// 收件省  必填
+        /// </summary>
+        [JsonProperty("receiverProvince")]
+        public string ReceiverProvince { get; set; }
+
+        /// <summary>
+        /// 收件市 必填
+        /// </summary>
+        [JsonProperty("receiverCity")]
+        public string ReceiverCity { get; set; }
+
+        /// <summary>
+        /// 收件区 必填
+        /// </summary>
+        [JsonProperty("receiverArea")]
+        public string ReceiverArea { get; set; }
+
+        /// <summary>
         /// 收件人地址  必填
         /// </summary>
         [JsonProperty("receiverAddress")]
@@ -115,6 +139,12 @@ namespace HupunSDK.Models
         /// </summary>
         [JsonProperty("hasRefund")]
         public int HasRefund { get; set; }
+
+        /// <summary>
+        /// 买家备注
+        /// </summary>
+        [JsonProperty("buyerMessage")]
+        public string BuyerMessage { get; set; }
 
         [JsonProperty("orders")]
         public List<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
